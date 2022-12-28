@@ -1,4 +1,42 @@
-# UOC Boilerplate
+# PAC3
+
+## Objectius
+
+- Utilitzar un workflow de desenvolupament frontend modern, partint de UOC Boilerplate.
+- Escollir criteris de desenvolupament adequats per al tipus d’encàrrec.
+- Aplicar-los de forma coherent fent una revisió crítica de la PAC 2.
+- Instal·lar i configurar correctament Tailwind v3 dins l’entorn d’UOC Boilerplate.
+- No cal que hi hagi Bootstrap o Stylelint
+- Recrear dues pàgines de la PAC 2 reescrivint l’HTML i CSS perquè segueixi el format Utility-first CSS, amb el paradigma de
+  l’Atomic CSS i fent servir la llibreria d’utilitats Tailwind.
+- Només incloure aquestes dues pàgines
+- Les pàgines que refacis hauran de seguir sent perfectament responsive.
+- Configurar Tailwind perquè generi les utilitats que necessitis: per exemple, per a configurar els colors o
+  tipus de lletra que vas fer servir.
+- Extreure un mínim de 2 classes amb @apply, tal com s’explica a la documentació de Tailwind.
+- Extreure un mínim de 2 components amb posthtml-include.
+- Documentar el procés de tria i aplicació dels criteris escollits, així com el propi procés de desenvolupament.
+- Publicar el repositori a GitHub i fer un deployment a Netlify..
+
+## Assolit
+
+- El projecte fet es pot visualitzar des de qualsevol dispositiu modern (telèfon, tauleta, ordinador…).
+- S'ha instal·lat correctament Tailwind v3 dins l’entorn d’UOC Boilerplate.
+- No s'ha instal·lat Bootstrap ni Stylelint
+- S'han recreat dues pàgines de la PAC2 seguint el format Utility-first CSS utilitzant Tailwind. Aquestes dues pàgines són la "home" i
+  la pàgina "membres", reproduïnt el mateix resultat que a la PAC2 però utilitzant Tailwind.
+- Les pàgines segueixen sent perfectament responsive.
+- S'ha configurat Tailwind a través de tailwind.config.js per a configurar els colors, el tipus de lletra fet servir a la PAC2, etc, fent un theme
+  de Tailwind pel projecte de la PAC3.
+- S'han extret 6 classes amb @apply, 3 com a components i 3 com a utilitats: btn-primary, item-title, item-subtitle, active, header-nav-item.active,
+  highlight
+- S'han extret 5 components amb posthtml-include que no són ni el header ni el footer.
+
+URL web pública (deployment a Netlify): https://prismatic-medovik-aa9205.netlify.app/
+
+
+
+# UOC Boilerplate PAC3
 
 UOC Boilerplate is a starter template for the HTML and CSS Tools courses from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, an image transformer, and development tools.
 
