@@ -1,0 +1,45 @@
+<!doctype html>
+  <html lang="ca" class="text-base-sm md:text-base-md lg:text-base-lg xl:text-base-xl 2xl:text-base-2xl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="author" content="Carles Melgarejo Vila">
+      <meta name="description" content="Detall dels membres de la banda de tribut als Beatles, Three of us">
+      <meta name="copyright" content="Carles Melgarejo 2022">
+
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      </noscript>
+
+      <link rel="stylesheet" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+      <title>Membres - Three of us</title>
+    </head>
+
+    <body class="text-base-sm md:text-base-md lg:text-base-lg xl:text-base-xl 2xl:text-base-2xl">
+      <include src="./views/header.html"></include>
+
+      <main class="2xl:max-w-screen-xl 2xl:mx-auto">
+        <h1 class="text-secondary text-center mb-4 pt-12 pb-4 px-12 text-5xl leading-near-tight font-bold">
+          Membres de la banda
+        </h1>
+
+        <!-- CSS FLEX MEMBERS CONTAINER & BOOTSTRAP COLLAPSE COMPONENT-->
+        <section class="flex flex-col px-12 md:px-near-7 md:flex-row md:justify-between md:gap-x-8">
+          <include src="./views/components/albert.html"></include>
+          <include src="./views/components/xavi.html"></include>
+          <include src="./views/components/carles.html"></include>
+        </section>
+      </main>
+
+      <include src="./views/components/highlighted-component.html"></include>
+      <include src="./views/footer.html"></include>
+
+      <script src="./assets/scripts/main.js" type="module"></script><!-- do not remove this line! -->
+    </body>
+  </html>

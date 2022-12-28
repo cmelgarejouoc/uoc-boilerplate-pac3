@@ -1,0 +1,128 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1440px',
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+    },
+    fontFamily: {
+      sans: ['Montserrat', 'Arial', 'sans-serif'],
+    },
+    fontSize: {
+      'xs': ['1.2rem', '1.2'],
+      'sm': ['1.3rem', '1.4'],
+      'base': ['1.4rem', '1.9'],
+      'lg': ['1.5rem', '1'],
+      'xl': ['1.6rem', '1.4'],
+      'near-2xl': ['1.7rem', '1.5'],
+      '2xl': ['2rem', '1.3'],
+      '3xl': ['2.2rem', '1.2'],
+      '4xl': ['2.4rem', '1.4'],
+      'near-4xl': ['2.8rem', '1'],
+      'near-5xl': ['3rem', '1.5'],
+      'near-5xl-plus': ['1.7rem', '1.5'],
+      '5xl': ['3.2rem', '1'],
+      '6xl': ['4.2rem', '1'],
+      '7xl': ['4.5rem', '1.2'],
+      '8xl': ['4.6rem', '1.2'],
+      '9xl': ['5rem', '1.2'],
+      'base-sm': '2.4vw',
+      'base-xs': '2.4vw',
+      'base-md': '1.2vw',
+      'base-lg': '.8vw',
+      'base-xl': '.8vw',
+      'base-2xl': '10px',
+    },
+    maxWidth: {
+      'xl': '39rem',
+      '2xl': '42rem',
+      'near-3xl': '47rem',
+      '3xl': '48rem',
+      '5xl': '64rem',
+      '6xl': '83rem',
+      'screen-xl': '1440px',
+      'screen-2xl': '1536px',
+    },
+    extend: {
+      colors: {
+        primary: '#fd7e14',
+        secondary: '#ffa34f',
+        highlight: '#f5f5f5',
+      },
+      boxShadow: {
+        'md': '0 3px 16px #4a4a4a33',
+      },
+      gridRowEnd: {
+        'neg-1': '-1',
+      },
+      gridTemplateRows: {
+        // Complex site-specific row configuration
+        'layout': '20vh 25vh 27vh 10vh;',
+      },
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'layout': 'minmax(20em,max-content) minmax(20em,max-content) 2fr minmax(1em,1fr) fit-content(28em) calc(2em + .5vw)',
+      },
+      height: {
+        'screen-20': '20vw',
+      },
+      lineHeight: {
+        'near-none': '1.1',
+        'near-tight': '1.2',
+        'near-snug': '1.3',
+        'near-normal': '1.4',
+        '6': '1.5',
+        'near-relaxed': '1.6',
+      },
+      spacing: {
+        '5px': '5px',
+        'near-1': '.2rem',
+        'near-1.5': '.3rem',
+        'near-2': '.4rem',
+        'near-3.5': '.8rem',
+        'near-5': '1.2rem',
+        'near-5-plus': '1.3rem',
+        'near-6': '1.4rem',
+        'near-7': '1.8rem',
+        '7': '1.9rem',
+        'near-9': '2.1rem',
+        '9': '2.2rem',
+        'near-10': '2.3rem',
+        'near-11': '2.7rem',
+        '13': '3.1rem',
+        'near-14': '3.2rem',
+        'near-16': '4.2rem',
+        '17': '4.1rem',
+        '18': '4.3rem',
+        '19': '4.7rem',
+        'near-20': '4.5rem',
+        '21': '5.1rem',
+        'screen-19': '19.9vw',
+      },
+      width: {
+        'near-12': '2.9rem',
+        'near-72': '16.6rem',
+        'near-80': '19.775rem',
+        'logo-xs': '23.4rem',
+        'logo-md': '15.6rem',
+        'logo-lg': '23.6rem',
+        'near-full': '90%',
+      },
+    },
+  },
+  plugins: [
+    require('tailwindcss-writing-mode')({
+      variants:['responsive'],
+    })
+  ],
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply text-white mb-20 text-2xl leading-6 font-semibold bg-primary border-primary border border-solid rounded-lg py-2 px-4 md:hover:opacity-70;
+  }
+
+
+  .item-title {
+    @apply text-primary mb-2 text-2xl leading-near-tight font-semibold;
+  }
+
+  .item-subtitle {
+    @apply text-primary text-xs font-medium mt-0 mb-2;
+  }
+}
+
+
+@layer utilities {
+  .active {
+    @apply text-black underline;
+  }
+
+  .header-nav-item.active {
+    @apply text-primary;
+  }
+
+
+  .highlight {
+    @apply w-near-full max-w-2xl text-center bg-highlight rounded-lg mx-auto my-near-20 py-8 px-10 md:max-w-screen-xl;
+  }
+}
