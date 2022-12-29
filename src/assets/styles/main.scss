@@ -37,7 +37,9 @@
 
 @layer components {
   .btn-primary {
-    @apply text-white mb-20 text-2xl leading-6 font-semibold bg-primary border-primary border border-solid rounded-lg py-2 px-4 md:hover:opacity-70;
+    @apply text-white mb-20 text-2xl leading-6 font-semibold bg-primary
+    border-primary border border-solid rounded-lg py-2 px-4
+    md:hover:opacity-70;
   }
 
 
@@ -62,6 +64,7 @@
 
 
   .highlight {
-    @apply w-near-full max-w-2xl text-center bg-highlight rounded-lg mx-auto my-near-20 py-8 px-10 md:max-w-screen-xl;
+    @apply w-near-full max-w-2xl text-center bg-highlight rounded-lg
+    mx-auto my-near-20 py-8 px-10 md:max-w-screen-xl;
   }
 }
