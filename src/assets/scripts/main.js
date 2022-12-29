@@ -77,28 +77,28 @@ const page = url.pathname.split("/").pop();
 
 switch (page) {
   case 'membres.html':
-    document.querySelector(".js-membres").classList.add("header-nav-item");
+    document.querySelector(".js-membres").classList.add("nav");
     document.querySelector(".js-menu-permalink").classList.remove("active");
     document.querySelector(".js-membres").classList.add("active");
     document.querySelector(".js-footer-permalink").classList.remove("active");
     document.querySelector(".js-footer-membres").classList.add("active");
     break;
   case 'proposta.html':
-    document.querySelector(".js-proposta").classList.add("header-nav-item");
+    document.querySelector(".js-proposta").classList.add("nav");
     document.querySelector(".js-menu-permalink").classList.remove("active");
     document.querySelector(".js-proposta").classList.add("active");
     document.querySelector(".js-footer-permalink").classList.remove("active");
     document.querySelector(".js-footer-proposta").classList.add("active");
     break;
   case 'contacte.html':
-    document.querySelector(".js-contacte").classList.add("header-nav-item");
+    document.querySelector(".js-contacte").classList.add("nav");
     document.querySelector(".js-menu-permalink").classList.remove("active");
     document.querySelector(".js-contacte").classList.add("active");
     document.querySelector(".js-footer-permalink").classList.remove("active");
     document.querySelector(".js-footer-contacte").classList.add("active");
     break;
   case '':
-    document.querySelector(".js-home").classList.add("header-nav-item");
+    document.querySelector(".js-home").classList.add("nav");
     document.querySelector(".js-menu-permalink").classList.remove("active");
     document.querySelector(".js-home").classList.add("active");
     document.querySelector(".js-footer-permalink").classList.remove("active");

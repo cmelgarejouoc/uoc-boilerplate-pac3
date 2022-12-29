@@ -28,7 +28,7 @@
 - Les pàgines segueixen sent perfectament responsive.
 - S'ha configurat Tailwind a través de tailwind.config.js per a configurar els colors, el tipus de lletra fet servir a la PAC2, etc, fent un theme
   de Tailwind pel projecte de la PAC3.
-- S'han extret 6 classes amb @apply, 3 com a components i 3 com a utilitats: btn-primary, item-title, item-subtitle, active, header-nav-item.active,
+- S'han extret 6 classes amb @apply, 3 com a components i 3 com a utilitats: btn-primary, title, subtitle, active, nav.active,
   highlight
 - S'han extret 5 components amb posthtml-include que no són ni el header ni el footer.
 

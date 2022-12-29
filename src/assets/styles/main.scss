@@ -41,11 +41,11 @@
   }
 
 
-  .item-title {
+  .title {
     @apply text-primary mb-2 text-2xl leading-near-tight font-semibold;
   }
 
-  .item-subtitle {
+  .subtitle {
     @apply text-primary text-xs font-medium mt-0 mb-2;
   }
 }
@@ -56,7 +56,7 @@
     @apply text-black underline;
   }
 
-  .header-nav-item.active {
+  .nav.active {
     @apply text-primary;
   }
 
