@@ -37,14 +37,14 @@
 
 @layer components {
   .btn-primary {
-    @apply text-white mb-20 text-2xl leading-6 font-semibold bg-primary
+    @apply text-white mb-20 text-3xl leading-relaxed font-semibold bg-primary
     border-primary border border-solid rounded-lg py-2 px-4
     md:hover:opacity-70;
   }
 
 
   .title {
-    @apply text-primary mb-2 text-2xl leading-near-tight font-semibold;
+    @apply text-primary mb-2 text-3xl leading-tight font-semibold;
   }
 
   .subtitle {
@@ -64,7 +64,7 @@
 
 
   .highlight {
-    @apply w-near-full max-w-2xl text-center bg-highlight rounded-lg
-    mx-auto my-near-20 py-8 px-10 md:max-w-screen-xl;
+    @apply w-9/10 max-w-2xl text-center bg-highlight rounded-lg
+    mx-auto my-18 py-8 px-10 md:max-w-screen-xl;
   }
 }
