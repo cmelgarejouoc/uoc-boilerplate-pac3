@@ -43,16 +43,7 @@ module.exports = {
       'base-xl': '.8vw',
       'base-2xl': '10px',
     },
-    maxWidth: {
-      'xl': '39rem',
-      '2xl': '42rem',
-      'near-3xl': '47rem',
-      '3xl': '48rem',
-      '5xl': '64rem',
-      '6xl': '83rem',
-      'screen-xl': '1440px',
-      'screen-2xl': '1536px',
-    },
+
     extend: {
       colors: {
         primary: '#fd7e14',
@@ -83,6 +74,16 @@ module.exports = {
         'near-normal': '1.4',
         '6': '1.5',
         'near-relaxed': '1.6',
+      },
+      maxWidth: {
+        'xl': '39rem',
+        '2xl': '42rem',
+        'near-3xl': '47rem',
+        '3xl': '48rem',
+        '5xl': '64rem',
+        '6xl': '83rem',
+        'screen-xl': '1440px',
+        'screen-2xl': '1536px',
       },
       spacing: {
         '5px': '5px',
@@ -124,5 +125,5 @@ module.exports = {
     require('tailwindcss-writing-mode')({
       variants:['responsive'],
     })
-  ],
+  ]
 }
